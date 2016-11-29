@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<language id="cg" _name="CG" version="2.0" _section="Markup">
+  <metadata>
+    <property name="mimetypes">text/plain</property>
+    <property name="globs">*.rlx</property>
+  </metadata>
+
+  <styles>
+    <style id="at"      _name="stuff"  map-to="def:constant" />
+    <style id="builtin-object"    _name="Builtin Object"        map-to="def:type"/>
+    <style id="hashtag" _name="# sign"  map-to="def:comment" />
+    <style id="other" _name="other stuff"  map-to="def:identifier" />
+    <style id="stuff" _name="more stuff"  map-to="def:statement" />    
+    <style id="module-handler"    _name="Module Handler"        map-to="def:preprocessor"/>
+
+
+  </styles>
+  <definitions>
+    <context id="cg">
+      <include>
+        <context id="at" style-ref="at">
+          <keyword>LIST</keyword>
+          <keyword>SET</keyword>
+          <keyword>DELIMITERS</keyword>
+          <keyword>SOFT-DELIMITERS</keyword>
+        </context>
+        <context id="other" style-ref="other">
+          <keyword>SELECT</keyword>
+          <keyword>REMOVE</keyword>
+        </context>
+        <context id="module-handler" style-ref="module-handler">
+          <keyword>(1|2|3|4|5|6|7|8|9|0)</keyword>
+        </context>
+        <context id="stuff" style-ref="stuff">
+          <keyword>IF</keyword>
+          <keyword>NOT</keyword>
+          <keyword>OR</keyword>
+        </context>
+
+      <context id="builtin-object" style-ref="builtin-object">
+          <start>"</start>
+          <end>"</end>
+        </context>  
+      <context id="hashtag" style-ref="hashtag">
+          <start>#</start>
+          <end>$</end>
+        </context>  
+      </include>
+    </context>
+  </definitions>
+</language>
