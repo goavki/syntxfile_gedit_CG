@@ -43,7 +43,7 @@
           <end>"</end>
         </context>  
       <context id="hashtag" style-ref="hashtag">
-          <start>#</start>
+          <start>(^#| #)</start>
           <end>$</end>
         </context>  
       </include>
