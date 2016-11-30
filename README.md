@@ -5,4 +5,8 @@ You can do that with the following command:
 
 wget https://raw.githubusercontent.com/nuboro/syntxfile_gedit_CG/master/rlx.lang -O ~/.local/share/gtksourceview-3.0/language-specs/rlx.lang
 
+If you haven't got that directory first create it with:
+
+mkdir -p ~/.local/share/gtksourceview-3.0/language-specs
+
 Now you can start using the syntax file either if you choose "CG" or automatically if the file ends with .rlx
