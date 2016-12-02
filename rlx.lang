@@ -45,7 +45,7 @@
           <keyword>1C|2C|3C|4C|5C|6C|7C|8C|9C|0C</keyword>
         </context>
         <context id="number2" style-ref="number">
-           <prefix>(\-||\*\-|\*)</prefix>
+           <prefix>(\-\*|\-||\*\-|\*)</prefix>
            <suffix>(\*C|\*|)</suffix>
           <keyword>1|2|3|4|5|6|7|8|9|0</keyword>
         </context>
