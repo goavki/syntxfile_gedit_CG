@@ -40,13 +40,13 @@
           <keyword>REMOVE</keyword>
         </context> 
         <context id="number" style-ref="number">
-          <prefix>(\-\*|\*\-|\-|\*|)</prefix>
-          <suffix>(\*\-|\-\*|\*|\-|)</suffix>
+          <prefix>(\-\*|\*\-|\-|\*|\*\*|)</prefix>
+          <suffix>(\*\-|\-\*|\*|\-|O|)</suffix>
           <keyword>1C|2C|3C|4C|5C|6C|7C|8C|9C|0C</keyword>
         </context>
         <context id="number2" style-ref="number">
            <prefix>(C\*|C\*\-|C\-\*|C\-|\*C\-|\-C\*|\-\*C|\-C|\-\*|\*\-C|\-|\*\*\-|\*\-|\*|\*C|C|)</prefix>
-           <suffix>(C\-|\*C\-|\-C\*|\*\-C|\-\*C|\-\*|\*C|\*\-|\*|pcC\…\*|CO|\-C|\-|)</suffix>
+           <suffix>(C\-|\*C\-|\-C\*|\*\-C|\-\*C|\-\*|\*C|\*\-|\*|pcC\…\*|CO|C|\-C|\-|O|)</suffix>
           <keyword>1|2|3|4|5|6|7|8|9|0</keyword>
         </context>
         <context id="stuff" style-ref="stuff">
@@ -60,7 +60,7 @@
         </context>
         <context id="chars" style-ref="chars" extend-parent="false">
           <match extended="true">
-           \%\%|\%
+           \\\\|\\
            (?:[1-9][0-9]*\$)?      # argument
            [#0\-\ \+\'I]*          # flags
            (?:[1-9][0-9]*|\*)?     # width
