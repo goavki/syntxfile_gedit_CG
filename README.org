@@ -1,4 +1,4 @@
-#+TITLE gtksourceview language definition for Constraint Grammar
+#+TITLE: gtksourceview language definition for Constraint Grammar
 
 This is a gtksourceview language definition that gives Constraint
 Grammar syntax highlighting in editors like Gedit.
