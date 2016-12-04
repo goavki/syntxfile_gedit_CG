@@ -12,4 +12,5 @@ To use:
   cp rlx.lang ~/.local/share/gtksourceview-3.0/language-specs/
 #+END_SRC
 
-Now any file ending in .rlx will get CG syntax highlighting.
+Now any file ending in .rlx or .cg3 will get CG syntax highlighting in
+Gedit.

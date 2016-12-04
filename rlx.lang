@@ -3,8 +3,7 @@
 <language id="cg" _name="CG" version="2.0" _section="Markup">
   <metadata>
     <property name="mimetypes">text/plain</property>
-    <property name="globs">*.rlx</property>
-  </metadata>
+    
 
   <styles>
     <style id="at"      _name="stuff"  map-to="def:constant" />
