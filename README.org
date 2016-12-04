@@ -11,3 +11,5 @@ To use:
   mkdir -p ~/.local/share/gtksourceview-3.0/language-specs/
   cp rlx.lang ~/.local/share/gtksourceview-3.0/language-specs/
 #+END_SRC
+
+Now any file ending in .rlx will get CG syntax highlighting.
